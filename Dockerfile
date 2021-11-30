@@ -1,6 +1,6 @@
 FROM ansible/ansible-runner:1.4.7
 
-RUN pip3 install boto botocore boto3
+RUN pip3 install boto botocore boto3 .[azure] requests google-auth
 
 WORKDIR /runner
 
